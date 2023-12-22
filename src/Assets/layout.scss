@@ -1,0 +1,142 @@
+header {
+  background-color: black;
+  width: 20%;
+  height: 100vh;
+  color: rgb(156, 156, 156);
+  position: fixed;
+  padding: 30px;
+  nav {
+
+   
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .home-nav {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: rgb(156, 156, 156);
+      transition: 200ms;
+      &:hover {
+        color: white;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      i {
+        margin-right: 20px;
+      }
+    }
+    .search {
+      color: rgb(156, 156, 156);
+      width: 100px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: 200ms;
+
+      &:hover {
+        color: white;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      i {
+        margin-right: 20px;
+      }
+    }
+    .your-library {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        transition: 200ms;
+        &:hover {
+          color: white;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          margin-left: 20px;
+        }
+      }
+      .right {
+        display: flex;
+
+        gap: 20px;
+
+        i {
+          cursor: pointer;
+          font-size: 18px;
+          transition: 200ms;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      gap: 20px;
+      button {
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+        font-weight: bold;
+        background-color: rgba(128, 128, 128, 0.315);
+        color: white;
+        transition: 200ms;
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.384);
+        }
+      }
+    }
+    .search-playlist {
+    
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .hover-search {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        transition: 200ms;
+        &:hover {
+           
+            color: white;
+          }
+        i {
+          cursor: pointer;
+         
+        }
+      }
+
+      .recents {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        transition: 200ms;
+        &:hover {
+          scale: 1.02;
+          color: white;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

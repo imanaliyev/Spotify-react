@@ -1,0 +1,107 @@
+#all{
+    width: 80%;
+  
+    
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 41%, rgb(167, 167, 167) 100%);
+    #hero{
+        min-height: 45vh;
+       
+     
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .hero-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .arrows{
+                display: flex;
+                gap: 10px;
+                .arrow{
+                    cursor: pointer;
+                    color: rgb(194, 194, 194);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                   background-color: rgba(0, 0, 0, 0.452);
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   transition: 200ms;
+                   &:hover{
+                    scale: 1.02;
+                    color: white;
+                }
+                }
+            }
+            .explore{
+                display: flex;
+                gap: 15px   ;
+
+                button{
+                    font-weight: bold;
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 15px;
+                    background-color: rgba(0, 0, 0, 0.63);
+                    color: rgb(194, 194, 194);
+                    transition: 200ms;
+                    &:hover{
+                        scale: 1.02;
+                        color: white;
+                    }
+                }
+                button:nth-of-type(1){
+                    width: 120px;
+                    background-color: white;
+                    color: black;
+                }
+                .bell{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    background-color: rgba(0, 0, 0, 0.63);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(194, 194, 194);
+                    transition: 200ms;
+                    cursor: pointer;
+                    &:hover{
+                        scale: 1.02;
+                        color: white;
+                    }
+                }
+                .user{
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    background-color: rgba(0, 0, 0, 0.63);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(194, 194, 194);
+                    transition: 200ms;
+                    &:hover{
+                        scale: 1.02;
+                        color: white;
+                    }
+
+                }
+            }
+        }
+        h1{
+            color: white;
+            font-weight: bold;
+            font-size: 38px;
+            margin-top: 20px;
+        }
+
+    }
+}
