@@ -1,9 +1,16 @@
 import { useContext, useState } from "react";
 import { SearchContext } from "../Context/Searchcontext";
+import MusicPlayer from "../Components/MusicPlayer/MusicPlayer";
+import mp3 from "../Assets/music/myTrck.mp3"
+
+
 
 function Home() {
   const {Data,searcheds} = useContext(SearchContext)
-  console.log(searcheds);
+
+  const audioTrack = mp3;
+ 
+
   return (
     <>
       <div id="all">
@@ -36,15 +43,18 @@ function Home() {
           </div>
         </section>
         <section id="top-mixes">
-          {Data.map(x=>(
-            <img src={""} alt="" />
-          ))}
+       
         
 
 
         </section>
+        <MusicPlayer audioTrack={audioTrack}></MusicPlayer>
+        
+     
+       
       </div>
-    </>
+  
+    </> 
   );
 }
 

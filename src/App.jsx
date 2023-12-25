@@ -7,6 +7,11 @@ import "./Assets/home.scss"
 import "./Assets/layout.scss"
 import "./Assets/reset.scss"
 import "./Assets/search.scss"
+import "./Assets/musicPlayer.scss"
+
+
+ 
+
 import Search from './Pages/Search'
 
 function App() {

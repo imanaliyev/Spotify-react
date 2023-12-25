@@ -1,10 +1,28 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { SearchContext } from "../Context/Searchcontext";
+import MusicPlayer from "../Components/MusicPlayer/MusicPlayer";
+import mp3 from "../Assets/music/myTrck.mp3"
 
 function Search() {
   const { handleSearch, searched, searcheds, setSearched,Data } =
     useContext(SearchContext);
     console.log(Data);
+    const [isSinging, setIsSinging] = useState(false)
+    let audioTrack = mp3
+    
+    const handlePlay =(song)=>{
+      setIsSinging(true)  
+   
+    
+     
+      
+      
+     
+     
+    }
+    console.log(audioTrack);
+    
+   
   return (
     <section id="search">
       <div className="search-top">
@@ -64,7 +82,7 @@ function Search() {
                 <p>{song.data.name}</p>
                 <p>{song.data?.artists?.items[0]?.profile.name}</p>
                
-                <div className="play">
+                <div onClick={()=>handlePlay(song)} className="play">
                 <i class="fa-solid fa-play"></i>
                 </div>
 
@@ -72,8 +90,12 @@ function Search() {
               </div>
             </>
           ))}
+          
         </div>
       </div>
+      {isSinging ? <MusicPlayer  audioTrack={audioTrack}/>: null}
+      
+      
     </section>
   );
 }
